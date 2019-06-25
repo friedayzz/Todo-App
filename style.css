@@ -19,7 +19,6 @@ html, body{
 
 li{
     list-style-type: none;
-    display: inline-block;
 }
 a{ text-decoration: none; }
 
@@ -63,7 +62,7 @@ nav h1{
     font-size: 2.5rem;
     font-weight: 700;
 }
-.navbar li a{
+.navbar a{
     color: #DCF0F7;
     font-size: 1.2rem;
     font-weight: 700;
@@ -71,8 +70,8 @@ nav h1{
     transition: all .2s ease-in;
 }
 
-.navbar li a:hover{
-    color: rgba(12, 44, 82, 0.568);
+.navbar a:hover{
+    color: rgb(94, 158, 200);
 }
 
 /* MAIN/MIDDLE PAGE */
@@ -139,6 +138,7 @@ nav h1{
     background-color: rgba(94, 158, 200, 0.75);
     color: #DCF0F7;
     padding: 12px 8px 12px 30px;
+    position: relative;
     display: block;
     cursor: pointer;
     transition: .2s;
@@ -160,6 +160,16 @@ nav h1{
     text-decoration: line-through;
 }
 
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 20px 12px 20px;
+}
+.close:hover{
+    background-color: rgb(179, 120, 120);
+}
+
 /* FOOTER */
 
 .footer{
@@ -172,10 +182,11 @@ nav h1{
     position: absolute;
     bottom: 0;
 }
-
-.footer .container{
-    width: 80%;
-    height: 100%;
+.footer h1{
+    color: #DCF0F7;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-
+.footer a{ color: #DCF0F7; text-decoration: underline;}
 
